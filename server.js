@@ -10,7 +10,8 @@ const publicRoutes = ['/contact'];
 createServer({
   port,
   middlewares: [logger, bodyParser],
-  // auth,
+  auth,
   publicRoutes,
   routes,
 });
+ 

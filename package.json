@@ -1,7 +1,7 @@
 {
   "name": "@3nobita/39server",
-  "version": "1.0.2",
-  "main": "lib/index.js",
+  "version": "1.0.5",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
@@ -16,8 +16,6 @@
   "license": "MIT",
   "description": "Minimal Node.js web server framework made by Bhavesh aka Nobita",
   "dependencies": {
-    "fs": "^0.0.1-security",
-    "http": "^0.0.1-security",
     "nodemon": "^3.1.9",
     "path": "^0.12.7"
   },

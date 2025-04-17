@@ -1,3 +1,4 @@
+// web-server/ indexe.js 
 const createServer = require('./lib/startServer');
 const logger = require('./lib/middleware/logger');
 const bodyParser = require('./lib/middleware/bodyParser');
@@ -14,3 +15,5 @@ createServer({
   publicRoutes,
   routes,
 });
+
+module.exports = createServer;
