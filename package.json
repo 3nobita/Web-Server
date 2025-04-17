@@ -1,21 +1,27 @@
 {
-  "name": "web-server",
+  "name": "39server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "web-server",
+    "framework",
+    "nodejs",
+    "minimal"
+  ],
+  "author": "Bhavesh Shinde",
+  "license": "MIT",
+  "description": "Minimal Node.js web server framework made by Bhavesh aka Nobita",
   "dependencies": {
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
     "nodemon": "^3.1.9",
     "path": "^0.12.7"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
