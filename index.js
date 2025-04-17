@@ -1,10 +1,16 @@
-const createServer = require('./lib/middleware/core/createServer');
-module.exports = { createServer };
-
-// index.js (at root level of your npm package)
-
 const createServer = require('./lib/startServer');
+const logger = require('./lib/middleware/logger');
+const bodyParser = require('./lib/middleware/bodyParser');
+const auth = require('./lib/middleware/auth/auth');
+const routes = require('./lib/routes');
+const port = require('./config/default').port;
 
-module.exports = {
-  createServer
-};
+const publicRoutes = ['/contact'];
+
+createServer({
+  port,
+  middlewares: [logger, bodyParser],
+  auth,
+  publicRoutes,
+  routes,
+});
